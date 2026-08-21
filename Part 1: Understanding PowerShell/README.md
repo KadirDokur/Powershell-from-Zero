@@ -173,7 +173,7 @@ Start-...
 You don’t need to memorize every command immediately.
 You can discover them. And this brings us to one of the most useful PowerShell commands.
 
-###Get-Command — Discover Commands
+##Get-Command — Discover Commands
 Suppose you want to find commands related to processes.
 Instead of searching Google, you can ask PowerShell:
 ```
