@@ -371,6 +371,7 @@ What properties does a process object have?
 Can you find any methods?
 Try to identify at least five properties and two methods.
 
+---
 Task 6 — Investigate a New Cmdlet
 Choose a cmdlet you haven’t used before.
 
@@ -385,6 +386,7 @@ Without searching online:
 Discover what it does.
 Read its help page.
 Find one useful example.
+
 ---
 Task 7 — Find Parameters
 Investigate the Get-Process cmdlet.
@@ -393,6 +395,7 @@ Can you find a parameter that allows you to retrieve a process by:
 Name
 ID
 How did you discover those parameters?
+
 ---
 Task 8 — Compare the Output
 Run the following commands:
