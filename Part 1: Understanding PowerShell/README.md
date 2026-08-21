@@ -42,76 +42,87 @@ At this point, it is very easy to think:
 
 The goal of this series is not to memorize hundreds of commands. The goal is to understand how PowerShell works. Once you understand the underlying concepts, learning new commands becomes much easier.
 
-What is PowerShell?
+##What is PowerShell?
 PowerShell is Microsoft’s command-line shell and scripting environment for Windows administration and automation.
 
-You can use it to:
+##You can use it to:
+-manage processes
+-work with files and directories
+-manage services
+-inspect network configuration
+-manage users
+-query system information
+-automate repetitive tasks
+-perform security and troubleshooting tasks
 
-manage processes
-work with files and directories
-manage services
-inspect network configuration
-manage users
-query system information
-automate repetitive tasks
-perform security and troubleshooting tasks
 For example, instead of opening Task Manager to see running processes, you can simply run:
-
+```
 Get-Process
+```
 You can inspect Windows services with:
-
+```
 Get-Service
+```
 And network adapters with:
-
+```
 Get-NetAdapter
+```
 Already, we can see a pattern.
 
 Many PowerShell commands are designed to be readable:
-
+```
 Get + Something
+```
 For example:
-
+```
 Get-Process
 Get-Service
 Get-ComputerInfo
 Get-NetAdapter
+```
 This naming convention is one of the first things that makes PowerShell easier to understand.
 
-PowerShell vs CMD
+##PowerShell vs CMD
 If you have used Windows for a while, you have probably used Command Prompt.
 
 For example:
-
+```
 ipconfig
+```
 or:
-
+```
 tasklist
+```
 CMD is still useful, but PowerShell was designed with much more powerful automation and object manipulation in mind. One of the biggest differences is what happens to the output.
 
 Consider:
-
+```
 Get-Process
+```
 You see a table containing information about processes.
 It might look like this:
-
+![Get Process Output](Screenshots/info.jpg)
 
 It may look like PowerShell simply printed some text. But that is not really what is happening. PowerShell is working with objects. This is one of the most important concepts in the entire language.
 
-PowerShell Works With Objects
+##PowerShell Works With Objects
 Let’s take:
-
+```
 Get-Process
+```
 The result is not just a block of text. Each process is represented as an object with properties and methods. For example, a process can have properties such as:
-
+```
 Name
 Id
 CPU
 Path
 Handles
+```
 This means we can interact with those properties directly.
 For example:
-
+```
 Get-Process | Select-Object Name, Id, CPU
+```
 Now we are telling PowerShell: Get the processes, but show me only their Name, Id and CPU.
 
 This is very different from manually parsing text. And this concept becomes extremely important when we start working with the pipeline in Part 2.
@@ -119,73 +130,85 @@ This is very different from manually parsing text. And this concept becomes extr
 Cmdlets: The Building Blocks of PowerShell
 PowerShell commands are often called cmdlets.
 A cmdlet usually follows a:
-
+```
 Verb-Noun
+```
 structure.
 
 For example:
-
+```
 Get-Process
 Get-Service
 Get-Location
 Set-Location
 Stop-Process
 Start-Service
+```
 This naming system makes commands easier to discover.
 
 For example, if you want to retrieve information about services, you can probably guess:
-
+```
 Get-Service
+```
 If you want to stop a process:
-
+```
 Stop-Process
+```
 If you want to retrieve information:
-
+```
 Get-...
+```
 If you want to modify something:
-
+```
 Set-...
+```
 If you want to remove something:
-
+```
 Remove-...
+```
 If you want to start something:
-
+```
 Start-...
+```
 You don’t need to memorize every command immediately.
 You can discover them. And this brings us to one of the most useful PowerShell commands.
 
-Get-Command — Discover Commands
+###Get-Command — Discover Commands
 Suppose you want to find commands related to processes.
 Instead of searching Google, you can ask PowerShell:
-
+```
 Get-Command *Process*
+```
 You may see commands such as:
 
 Press enter or click to view image in full size
 
 You can also search by verb:
-
+```
 Get-Command -Verb Get
+```
 Press enter or click to view image in full size
 
 Or by noun:
-
+```
 Get-Command -Noun Process
+```
 Press enter or click to view image in full size
 
-This is a very important habit. Instead of thinking:“I don’t know the command.”
-Think: “How can I make PowerShell show me the command?”
+This is a very important habit. Instead of thinking:**“I don’t know the command.”**
+Think: **“How can I make PowerShell show me the command?”**
 
-Learning Command Parameters with Get-Help
+##Learning Command Parameters with Get-Help
 As you continue learning PowerShell, you’ll notice that most cmdlets can do much more than their default behavior. This is possible because they support parameters.
 
 For example, running:
-
+```
 Get-Process
+```
 returns all running processes on your system. However, what if you’re only interested in Google Chrome? Instead of retrieving every process, you can narrow the output by using the -Name parameter:
-
+```
 Get-Process -Name chrome
-
+```
 Here, -Name tells PowerShell to return only the processes whose name matches chrome.
 
 At first, seeing parameters like -Name, -Id, -ComputerName, or -ErrorAction can feel overwhelming. It might seem like you need to memorize every available option for every cmdlet.
@@ -193,8 +216,9 @@ At first, seeing parameters like -Name, -Id, -ComputerName, or -ErrorAction can 
 Fortunately, that’s not how PowerShell is meant to be learned.
 
 Whenever you want to know what a cmdlet is capable of, simply ask PowerShell itself:
-
+```
 Get-Help Get-Process -Full
+```
 The help page provides detailed information about the cmdlet, including:
 
 A description of what the cmdlet does.
