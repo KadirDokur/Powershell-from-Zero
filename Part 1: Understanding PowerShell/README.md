@@ -1,4 +1,4 @@
-<img width="2048" height="1152" src="(Screenshots/cover.jpg)" />
+![Get Process Output](Screenshots/cover.jpg)
 
 ```PowerShell from Zero
 Part 1 ✅ Understanding PowerShell
