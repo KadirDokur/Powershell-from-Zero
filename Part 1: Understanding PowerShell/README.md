@@ -45,7 +45,7 @@ The goal of this series is not to memorize hundreds of commands. The goal is to 
 ##What is PowerShell?
 PowerShell is Microsoft’s command-line shell and scripting environment for Windows administration and automation.
 
-## You can use it to:
+You can use it to:
 -manage processes
 -work with files and directories
 -manage services
@@ -347,10 +347,10 @@ Now it’s time to practice what you’ve learned. Try to solve the following ta
 
 Task 1 — Explore Running Processes
 Display all running processes on your system.
-
+---
 Task 2 — Discover Process Commands
 Find every PowerShell command related to processes.
-
+---
 Task 3 — Learn About Get-Service
 Without opening a web browser, find the documentation for the Get-Service cmdlet.
 
@@ -375,15 +375,17 @@ Task 6 — Investigate a New Cmdlet
 Choose a cmdlet you haven’t used before.
 
 For example:
-
+```
 Get-Location
 Get-Date
 Get-ComputerInfo
+```
 Without searching online:
 
 Discover what it does.
 Read its help page.
 Find one useful example.
+---
 Task 7 — Find Parameters
 Investigate the Get-Process cmdlet.
 Can you find a parameter that allows you to retrieve a process by:
@@ -391,7 +393,7 @@ Can you find a parameter that allows you to retrieve a process by:
 Name
 ID
 How did you discover those parameters?
-
+---
 Task 8 — Compare the Output
 Run the following commands:
 
