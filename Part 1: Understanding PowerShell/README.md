@@ -187,13 +187,13 @@ You can also search by verb:
 ```
 Get-Command -Verb Get
 ```
-Press enter or click to view image in full size
+![Get Process Output](Screenshots/verb.jpg)
 
 Or by noun:
+![Get Process Output](Screenshots/noun.jpg)
 ```
 Get-Command -Noun Process
 ```
-Press enter or click to view image in full size
 
 This is a very important habit. Instead of thinking:**“I don’t know the command.”**
 Think: **“How can I make PowerShell show me the command?”**
@@ -209,6 +209,7 @@ returns all running processes on your system. However, what if you’re only int
 ```
 Get-Process -Name chrome
 ```
+![Get Process Output](Screenshots/name.jpg)
 Here, -Name tells PowerShell to return only the processes whose name matches chrome.
 
 At first, seeing parameters like -Name, -Id, -ComputerName, or -ErrorAction can feel overwhelming. It might seem like you need to memorize every available option for every cmdlet.
@@ -244,7 +245,7 @@ Get-Member
 For example:
 
 Get-Process | Get-Member
-Press enter or click to view image in full size
+![Get Process Output](Screenshots/getmember.jpg)
 
 This shows us the members of the objects returned by Get-Process. You will see things such as properties and methods.
 For example:
