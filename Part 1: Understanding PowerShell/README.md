@@ -346,34 +346,40 @@ Congratulations! You’ve completed Part 1.
 Now it’s time to practice what you’ve learned. Try to solve the following tasks without searching for the answers immediately. Use the commands introduced in this article and explore PowerShell’s built-in help system whenever you get stuck.
 
 Task 1 — Explore Running Processes
+---
 Display all running processes on your system.
----
+
 Task 2 — Discover Process Commands
+---
 Find every PowerShell command related to processes.
----
+
 Task 3 — Learn About Get-Service
-Without opening a web browser, find the documentation for the Get-Service cmdlet.
 ---
+Without opening a web browser, find the documentation for the Get-Service cmdlet.
+
 Then answer these questions:
 
 What does it do?
 Which parameters does it support?
 Can you find an example in the documentation?
+
 Task 4 — Show Only What You Need
 ---
 Display only the following properties for running processes:
 
 Process Name
 Process ID
+
 Task 5 — Inspect an Object
+---
 Use PowerShell to discover:
 
 What properties does a process object have?
 Can you find any methods?
 Try to identify at least five properties and two methods.
 
----
 Task 6 — Investigate a New Cmdlet
+---
 Choose a cmdlet you haven’t used before.
 
 For example:
@@ -388,8 +394,8 @@ Discover what it does.
 Read its help page.
 Find one useful example.
 
----
 Task 7 — Find Parameters
+---
 Investigate the Get-Process cmdlet.
 Can you find a parameter that allows you to retrieve a process by:
 
@@ -399,17 +405,21 @@ How did you discover those parameters?
 
 ---
 Task 8 — Compare the Output
+---
 Run the following commands:
-
+```
 Get-Process & Get-Process | Select-Object Name, Id
+```
 Compare the outputs.
 
 Ask yourself:
 
-Which one contains more information?
-Which one is easier to read?
-Why might selecting only the necessary properties be useful?
+-Which one contains more information?
+-Which one is easier to read?
+-Why might selecting only the necessary properties be useful?
+
 Task 9 — Challenge Yourself
+---
 Without using Google, try to answer this question: “How can I find every cmdlet related to networking?”
 Use only the tools you’ve learned in this chapter.
 
