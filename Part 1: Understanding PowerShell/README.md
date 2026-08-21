@@ -38,7 +38,7 @@ Sort-Object
 
 At this point, it is very easy to think:
 
-“Do I really have to memorize all of this?” No.
+**“Do I really have to memorize all of this?”** No.
 
 The goal of this series is not to memorize hundreds of commands. The goal is to understand how PowerShell works. Once you understand the underlying concepts, learning new commands becomes much easier.
 
