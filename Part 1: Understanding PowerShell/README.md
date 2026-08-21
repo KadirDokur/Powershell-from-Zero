@@ -342,6 +342,8 @@ The output of a command is not simply text that we have to manually parse.
 ```
 Get-Command *Process*
 ```
+![Get Process Output](Screenshots/search.jpg)
+
 5. Get-Help gives us documentation
 ```
 Get-Help Get-Process
