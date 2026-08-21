@@ -353,13 +353,14 @@ Find every PowerShell command related to processes.
 ---
 Task 3 — Learn About Get-Service
 Without opening a web browser, find the documentation for the Get-Service cmdlet.
-
+---
 Then answer these questions:
 
 What does it do?
 Which parameters does it support?
 Can you find an example in the documentation?
 Task 4 — Show Only What You Need
+---
 Display only the following properties for running processes:
 
 Process Name
