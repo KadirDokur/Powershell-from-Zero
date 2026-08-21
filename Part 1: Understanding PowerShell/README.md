@@ -45,7 +45,7 @@ The goal of this series is not to memorize hundreds of commands. The goal is to 
 ##What is PowerShell?
 PowerShell is Microsoft’s command-line shell and scripting environment for Windows administration and automation.
 
-##You can use it to:
+## You can use it to:
 -manage processes
 -work with files and directories
 -manage services
@@ -82,7 +82,7 @@ Get-NetAdapter
 ```
 This naming convention is one of the first things that makes PowerShell easier to understand.
 
-##PowerShell vs CMD
+## PowerShell vs CMD
 If you have used Windows for a while, you have probably used Command Prompt.
 
 For example:
@@ -105,7 +105,7 @@ It might look like this:
 
 It may look like PowerShell simply printed some text. But that is not really what is happening. PowerShell is working with objects. This is one of the most important concepts in the entire language.
 
-##PowerShell Works With Objects
+## PowerShell Works With Objects
 Let’s take:
 ```
 Get-Process
@@ -173,7 +173,7 @@ Start-...
 You don’t need to memorize every command immediately.
 You can discover them. And this brings us to one of the most useful PowerShell commands.
 
-##Get-Command — Discover Commands
+## Get-Command — Discover Commands
 Suppose you want to find commands related to processes.
 Instead of searching Google, you can ask PowerShell:
 ```
