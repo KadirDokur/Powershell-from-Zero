@@ -14,11 +14,13 @@ If you are working with Windows and want to move beyond clicking through menus, 
 ```
 At first, PowerShell can look intimidating.
 There are commands like:
-
+```
 Get-Process
 Get-Service
 Get-NetAdapter
 Get-ChildItem
+```
+
 Then you start seeing things like:
 
 -Name
