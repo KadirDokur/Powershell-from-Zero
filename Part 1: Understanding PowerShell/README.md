@@ -11,8 +11,8 @@ Part 7 ⏳ Scripting Basics
 Part 8 ⏳ Windows Administration
 Part 9 ⏳ PowerShell for Security
 Part 10 ⏳ Automation Project
-If you are working with Windows and want to move beyond clicking through menus, sooner or later you will encounter PowerShell.
 ```
+If you are working with Windows and want to move beyond clicking through menus, sooner or later you will encounter PowerShell.
 At first, PowerShell can look intimidating.
 There are commands like:
 ```
