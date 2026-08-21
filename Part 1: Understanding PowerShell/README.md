@@ -193,6 +193,7 @@ Get-Command -Verb Get
 Or by noun:
 
 ![Get Process Output](Screenshots/noun.jpg)
+
 ```
 Get-Command -Noun Process
 ```
@@ -212,6 +213,7 @@ returns all running processes on your system. However, what if you’re only int
 Get-Process -Name chrome
 ```
 ![Get Process Output](Screenshots/name.jpg)
+
 Here, -Name tells PowerShell to return only the processes whose name matches chrome.
 
 At first, seeing parameters like -Name, -Id, -ComputerName, or -ErrorAction can feel overwhelming. It might seem like you need to memorize every available option for every cmdlet.
@@ -245,75 +247,84 @@ Meet:
 
 Get-Member
 For example:
-
+```
 Get-Process | Get-Member
+```
+
 ![Get Process Output](Screenshots/getmember.jpg)
 
 This shows us the members of the objects returned by Get-Process. You will see things such as properties and methods.
 For example:
+-Name
+-Id
+-CPU
+-Path
+-Kill()
+-WaitForExit()
 
-Name
-Id
-CPU
-Path
-Kill()
-WaitForExit()
 You can think about it like this: Properties describe an object.
-
+```
 Name
 Id
 CPU
 Path
+```
 Methods perform actions.
-
+```
 Kill()
 WaitForExit()
+```
 We will explore properties and methods in much more detail later in the series.
 
 For now, just remember:
-
+```
 Get-Member
+```
 is a way of asking:
 
-“What exactly am I working with?”
+**“What exactly am I working with?”**
 
-A Small Investigation
+## A Small Investigation
 Let’s put these ideas together.
 
 Start with:
-
+```
 Get-Process
+```
 Then ask:
-
+```
 Get-Process | Get-Member
+```
 Now we know what kind of object we are dealing with.
 
 Then:
-
+```
 Get-Process | Select-Object Name, Id, CPU
-Press enter or click to view image in full size
+```
+![Get Process Output](Screenshots/pipe.jpg)
 
 Now we are selecting specific properties. We haven’t even learned the pipeline properly yet, but we have already started using it.
-
 And this is where PowerShell starts becoming interesting.
 
-A Different Way of Thinking
+## A Different Way of Thinking
 When learning PowerShell, try not to think like this: “What command do I need to memorize?” Instead, think like this: “What information do I want?”
 
 For example:
-
-I want to see running processes.
-
+**I want to see running processes.**
+```
 Get-Process
-I want to know what properties those processes have.
-
+```
+**I want to know what properties those processes have.**
+```
 Get-Process | Get-Member
-I only want the process name and PID.
-
+```
+**I only want the process name and PID.**
+```
 Get-Process | Select-Object Name, Id
+```
 This way of thinking will become extremely powerful later.
 
-What We Learned
+## What We Learned
 In this first part, we learned the basic mental model of PowerShell:
 
 1. PowerShell is more than a command prompt
