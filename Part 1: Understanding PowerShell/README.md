@@ -24,14 +24,18 @@ Get-ChildItem
 
 Then you start seeing things like:
 
+```
 -Name
 -ComputerName
 -ErrorAction
+
 And eventually:
 
 Where-Object
 Select-Object
 Sort-Object
+```
+
 At this point, it is very easy to think:
 
 “Do I really have to memorize all of this?” No.
