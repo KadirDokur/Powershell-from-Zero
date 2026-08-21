@@ -1,4 +1,4 @@
-<img width="2048" height="1152" alt="cover" src="[Part 1: Understanding PowerShell/Screenshots/cover.jpg](https://github.com/KadirDokur/Powershell-from-Zero/blob/main/Part%201%3A%20Understanding%20PowerShell/Screenshots/cover.jpg)" />
+<img width="2048" height="1152" src="[Part 1: Understanding PowerShell/Screenshots/cover.jpg](https://github.com/KadirDokur/Powershell-from-Zero/blob/main/Part%201%3A%20Understanding%20PowerShell/Screenshots/cover.jpg)" />
 
 ```PowerShell from Zero
 Part 1 ✅ Understanding PowerShell
