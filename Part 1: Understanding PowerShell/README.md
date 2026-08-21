@@ -1,4 +1,4 @@
-
+![Get Process Output](screenshots/cover-png.jpg)
 ```PowerShell from Zero
 Part 1 ✅ Understanding PowerShell
 Part 2 ⏳ The Pipeline ← You are here
