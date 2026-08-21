@@ -187,9 +187,11 @@ You can also search by verb:
 ```
 Get-Command -Verb Get
 ```
+
 ![Get Process Output](Screenshots/verb.jpg)
 
 Or by noun:
+
 ![Get Process Output](Screenshots/noun.jpg)
 ```
 Get-Command -Noun Process
