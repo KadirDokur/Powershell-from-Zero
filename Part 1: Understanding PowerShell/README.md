@@ -327,31 +327,40 @@ This way of thinking will become extremely powerful later.
 ## What We Learned
 In this first part, we learned the basic mental model of PowerShell:
 
-1. PowerShell is more than a command prompt
+## 1. PowerShell is more than a command prompt
 It can be used for system administration, troubleshooting and automation.
 
-2. Commands usually follow Verb-Noun
+## 2. Commands usually follow Verb-Noun
+```
 Get-Process
 Get-Service
 Stop-Process
 Start-Service
-3. PowerShell works with objects
+```
+## 3. PowerShell works with objects
 The output of a command is not simply text that we have to manually parse.
 
 4. Get-Command helps us discover commands
+```
 Get-Command *Process*
+```
 5. Get-Help gives us documentation
+```
 Get-Help Get-Process
+```
 6. Get-Member lets us inspect objects
+```
 Get-Process | Get-Member
+```
 These three commands alone are worth remembering:
-
+```
 Get-Command
 Get-Help
 Get-Member
+```
 They are essentially our first PowerShell toolkit.
 
-Practice Tasks
+## Practice Tasks
 Congratulations! You’ve completed Part 1.
 
 Now it’s time to practice what you’ve learned. Try to solve the following tasks without searching for the answers immediately. Use the commands introduced in this article and explore PowerShell’s built-in help system whenever you get stuck.
