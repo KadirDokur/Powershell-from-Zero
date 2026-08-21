@@ -214,12 +214,11 @@ Get-Process -Name chrome
 ```
 ![Get Process Output](Screenshots/name.jpg)
 
-Here, -Name tells PowerShell to return only the processes whose name matches chrome.
+Here, **-Name** tells PowerShell to return only the processes whose name matches chrome.
 
-At first, seeing parameters like -Name, -Id, -ComputerName, or -ErrorAction can feel overwhelming. It might seem like you need to memorize every available option for every cmdlet.
+At first, seeing parameters like *-Name*, *-Id*, *-ComputerName*, or *-ErrorAction* can feel overwhelming. It might seem like you need to memorize every available option for every cmdlet.
 
 Fortunately, that’s not how PowerShell is meant to be learned.
-
 Whenever you want to know what a cmdlet is capable of, simply ask PowerShell itself:
 ```
 Get-Help Get-Process -Full
@@ -232,20 +231,19 @@ Parameter descriptions.
 Usage examples.
 Additional notes and related commands.
 For example, you’ll discover that Get-Process supports parameters such as:
-
+```
 Get-Process -Name chrome
 Get-Process -Id 4321
+```
 Instead of memorizing syntax, develop the habit of exploring a cmdlet through its built-in documentation.
-
 This approach is far more valuable because every PowerShell cmdlet follows the same idea: if you know how to use Get-Help, you can learn any cmdlet on your own.
 
-Get-Member — What Can This Object Do?
+## Get-Member — What Can This Object Do?
 Now we are getting to something really important. Remember that PowerShell works with objects. But how do we know what properties an object has?
-
-Become a Medium member
 Meet:
-
+```
 Get-Member
+```
 For example:
 ```
 Get-Process | Get-Member
@@ -418,12 +416,10 @@ Task 7 — Find Parameters
 ---
 Investigate the Get-Process cmdlet.
 Can you find a parameter that allows you to retrieve a process by:
-
-Name
-ID
+-Name
+-ID
 How did you discover those parameters?
 
----
 Task 8 — Compare the Output
 ---
 Run the following commands:
@@ -444,18 +440,18 @@ Without using Google, try to answer this question: “How can I find every cmdle
 Use only the tools you’ve learned in this chapter.
 
 What’s Next?
-In the next part, we will look at one of the most important concepts in PowerShell:
-
-The Pipeline |
+In the next part, we will look at one of the most important concepts in PowerShell: **The Pipeline |**
 We’ll start with something simple:
-
+```
 Get-Process
+```
 and gradually transform it into:
-
+```
 Get-Process |
 Where-Object CPU -gt 100 |
 Sort-Object CPU -Descending |
 Select-Object -First 10 Name, Id, CPU
+```
 Instead of simply running commands, we’ll learn how to take the output of one command, send it to another command, filter it, sort it and select exactly the information we need.
 
 That’s where PowerShell starts to become really powerful.
