@@ -64,7 +64,7 @@ The long-term goal is to expand this repository into more advanced topics:
 
 The full article series is published on Medium:
 
-[(Add Medium link here)](https://medium.com/@kadirrdokurr_23364/powershell-from-zero-part-1-understanding-powershell-before-writing-scripts-f8d5698be4b6)
+[(Medium)](https://medium.com/@kadirrdokurr_23364/powershell-from-zero-part-1-understanding-powershell-before-writing-scripts-f8d5698be4b6)
 
 ## 🚀 Future Topics
 
